@@ -1,0 +1,12 @@
+C:\workspace\Champions-Api\Champions-Api\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\workspace\Champions-Api\Champions-Api\Domain\bin\Debug\net8.0\Domain.dll
+C:\workspace\Champions-Api\Champions-Api\Domain\bin\Debug\net8.0\Domain.pdb
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\Domain.dll
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\Domain.pdb
+C:\workspace\Champions-Api\Champions-Api\Domain\obj\Debug\net8.0\ref\Domain.dll

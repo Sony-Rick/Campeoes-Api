@@ -1,0 +1,16 @@
+C:\workspace\Champions-Api\Champions-Api\Infra\bin\Debug\net8.0\Infra.deps.json
+C:\workspace\Champions-Api\Champions-Api\Infra\bin\Debug\net8.0\Infra.dll
+C:\workspace\Champions-Api\Champions-Api\Infra\bin\Debug\net8.0\Infra.pdb
+C:\workspace\Champions-Api\Champions-Api\Infra\bin\Debug\net8.0\Domain.dll
+C:\workspace\Champions-Api\Champions-Api\Infra\bin\Debug\net8.0\Domain.pdb
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.csproj.AssemblyReference.cache
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.AssemblyInfoInputs.cache
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.AssemblyInfo.cs
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.csproj.CoreCompileInputs.cache
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.sourcelink.json
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.csproj.Up2Date
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.dll
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\refint\Infra.dll
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\Infra.pdb
+C:\workspace\Champions-Api\Champions-Api\Infra\obj\Debug\net8.0\ref\Infra.dll
