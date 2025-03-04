@@ -27,6 +27,6 @@ namespace Domain.Entidade
 
         EnumLanes enumLanes{ get; set; }
 
-        
+        EnumTipo enumTipo{get; set; }//Adicionar mais de um tipo
     }
 }
