@@ -1,9 +1,72 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 OPR/116.0.0.0" version="26.1.0">
   <diagram name="Página-1" id="uZn9SJTi4C2uD5IdxG2H">
-    <mxGraphModel>
+    <mxGraphModel dx="1936" dy="958" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-1" value="Campeao&amp;nbsp;&lt;div&gt;string&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Nome&lt;/div&gt;&lt;div&gt;string&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;Foto&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Vidabase&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; manaBase&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TipoCamepeaoEnum .&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tipoCampeao&lt;/span&gt;&lt;/div&gt;&lt;div&gt;LaneEnum&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Lane&lt;/div&gt;&lt;div&gt;String&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; passiva&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;danoPassiva&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;List&amp;lt;Habilidades&amp;gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Habilidades&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="49" width="292" height="292" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-2" value="Habilidades&lt;div&gt;TeclaAtivacao&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;teclaAtivacao&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;String&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;nome&lt;/span&gt;&lt;/div&gt;&lt;div&gt;int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;dano&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; Int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; custoMana&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;Int&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; tempoRecarga&lt;/div&gt;&lt;div&gt;bool&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ultimate&lt;/div&gt;&lt;div&gt;Campeao&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; campea&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="363" y="-21" width="399" height="159" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-3" value="" style="endArrow=none;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="sCxddeMJXkWrgDTUl4u1-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="313" y="104" as="sourcePoint" />
+            <mxPoint x="363" y="54" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-4" value="1.M" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="311" y="62.5" width="45" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-5" value="TipoCampeao&lt;div&gt;Tanque&amp;nbsp;&lt;/div&gt;&lt;div&gt;Caçador&amp;nbsp;&lt;/div&gt;&lt;div&gt;Mago&lt;/div&gt;&lt;div&gt;Suporte&lt;/div&gt;&lt;div&gt;Atirador&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="321" y="191" width="258" height="258" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-6" value="Lane&amp;nbsp;&lt;div&gt;Topo&lt;/div&gt;&lt;div&gt;Meio&lt;/div&gt;&lt;div&gt;Caador&lt;/div&gt;&lt;div&gt;Atirador&lt;/div&gt;&lt;div&gt;Suporte&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="671" y="193.5" width="253" height="253" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-10" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="175" y="303" as="sourcePoint" />
+            <mxPoint x="314" y="243" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="314" y="293" />
+              <mxPoint x="264" y="276" />
+              <mxPoint x="264" y="243" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-12" value="" style="curved=1;endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="sCxddeMJXkWrgDTUl4u1-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="587" y="396" as="sourcePoint" />
+            <mxPoint x="637" y="351" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="637" y="401" />
+              <mxPoint x="587" y="351" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-13" value="" style="endArrow=classic;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="953" y="360" as="sourcePoint" />
+            <mxPoint x="1107" y="234" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-14" value="ENUM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1109" y="203.5" width="65" height="31" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-17" value="iTENS INICIAS&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;STRING Nome&lt;/div&gt;&lt;div&gt;STRING Foto&lt;/div&gt;&lt;div&gt;INT CustoItem&lt;/div&gt;&lt;div&gt;STRING ResumoDoFazz&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-255" y="398" width="191" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-18" value="ItensFinais&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;String Nome&lt;/div&gt;&lt;div&gt;String Foto&lt;/div&gt;&lt;div&gt;Int CustoItem&lt;/div&gt;&lt;div&gt;String ResumoDoItem&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-14" y="400" width="191" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-20" value="Como Jogar?&amp;nbsp;&lt;div&gt;Um resumo curto de como jogar com certo campeao&amp;nbsp;&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="-563" y="85" width="180" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="sCxddeMJXkWrgDTUl4u1-21" value="Ideias Validas??" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="30" width="134" height="31" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
