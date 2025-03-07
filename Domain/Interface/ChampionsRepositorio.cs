@@ -11,7 +11,7 @@ namespace Domain.Interface
         void Add(Champions champions);  
         Champions GetById(int id); 
         IEnumerable<Champions> GetAll();
-        void update(Champions champions);
-        void delete(int id);
+        void Update(Champions champions);
+        void Delete(int id);
     }
 }

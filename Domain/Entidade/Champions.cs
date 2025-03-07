@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Domain.Enums;
 
 namespace Domain.Entidade
 {
@@ -25,8 +26,8 @@ namespace Domain.Entidade
 
         public int TempoDeRecargBase { get; set; }
 
-        EnumLanes enumLanes{ get; set; }
+        public Lane lane { get; set; }
 
-        EnumTipo enumTipo{get; set; }//Adicionar mais de um tipo
+        public  Tipo tipo {get; set; }//Adicionar mais de um tipo
     }
 }
