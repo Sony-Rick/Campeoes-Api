@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 using Domain.Entidade;
 using Domain.Interface;
 
-namespace Infra.Repositories
+namespace Infra.Repositorio
 {
-    public class ChampionsRepositorio : IChampionsRepositorio 
+    public class CampeaoRepositorio : ICampeaoRepositorio
     {
-        private readonly List<Champions> _champions = new List<Champions>();
+        private readonly List<Campeao> _campeao <Campeao>(); 
 
-        public void Add(Champion champion)
+        public void Add(Campeao campeao)
         {
             
         }

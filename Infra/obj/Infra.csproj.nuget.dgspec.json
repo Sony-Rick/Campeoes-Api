@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\Champions-Api\\Champions-Api\\Infra\\Infra.csproj": {}
+    "C:\\workspace\\Campeoes-Api\\Champions-Api\\Infra\\Infra.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\Champions-Api\\Champions-Api\\Domain\\Domain.csproj": {
+    "C:\\workspace\\Campeoes-Api\\Champions-Api\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Champions-Api\\Champions-Api\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\workspace\\Champions-Api\\Champions-Api\\Domain\\Domain.csproj",
+        "projectPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Champions-Api\\Champions-Api\\Domain\\obj\\",
+        "outputPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,14 +62,14 @@
         }
       }
     },
-    "C:\\workspace\\Champions-Api\\Champions-Api\\Infra\\Infra.csproj": {
+    "C:\\workspace\\Campeoes-Api\\Champions-Api\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Champions-Api\\Champions-Api\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\workspace\\Champions-Api\\Champions-Api\\Infra\\Infra.csproj",
+        "projectPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Champions-Api\\Champions-Api\\Infra\\obj\\",
+        "outputPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\workspace\\Champions-Api\\Champions-Api\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\workspace\\Champions-Api\\Champions-Api\\Domain\\Domain.csproj"
+              "C:\\workspace\\Campeoes-Api\\Champions-Api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Domain\\Domain.csproj"
               }
             }
           }

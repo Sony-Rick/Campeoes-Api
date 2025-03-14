@@ -6,7 +6,7 @@ using Domain.Enums;
 
 namespace Domain.Entidade
 {
-    public class Champions
+    public class Campeao
     {
         public int Id { get; set; }
 
@@ -24,7 +24,7 @@ namespace Domain.Entidade
 
         public int RegenVida { get; set; }
 
-        public int TempoDeRecargBase { get; set; }
+        public int TempoDeRecargBase { get; set; } //Nao deveria ser Adicionado junto da Habilidades ?  e tbm aplica tempo de recarga da passiva se for o caso  
 
         public Lane lane { get; set; }
 
