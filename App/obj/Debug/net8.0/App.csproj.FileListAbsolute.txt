@@ -16,3 +16,6 @@ C:\workspace\Champions-Api\Champions-Api\App\obj\Debug\net8.0\App.dll
 C:\workspace\Champions-Api\Champions-Api\App\obj\Debug\net8.0\refint\App.dll
 C:\workspace\Champions-Api\Champions-Api\App\obj\Debug\net8.0\App.pdb
 C:\workspace\Champions-Api\Champions-Api\App\obj\Debug\net8.0\ref\App.dll
+C:\workspace\Campeoes-Api\Champions-Api\App\obj\Debug\net8.0\App.dll
+C:\workspace\Campeoes-Api\Champions-Api\App\obj\Debug\net8.0\refint\App.dll
+C:\workspace\Campeoes-Api\Champions-Api\App\obj\Debug\net8.0\App.pdb

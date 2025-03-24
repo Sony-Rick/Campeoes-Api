@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Domain.Entidade;
 using Domain.Interface;
 
-namespace Infra.Repositorio
+namespace Infra.Repositories
 {
-    public class CampeaoRepositorio : ICampeaoRepositorio
+    public class CampeaoRepositorio : ICampeaoRepositories
     {
         private readonly List<Campeao> _campeao <Campeao>(); 
 
