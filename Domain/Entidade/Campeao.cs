@@ -6,7 +6,7 @@ using Domain.Enums;
 
 namespace Domain.Entidade
 {
-    public class Campeao
+    public class Campeao : Entidade
     {
         public int Id { get; set; }
 
@@ -30,4 +30,12 @@ namespace Domain.Entidade
 
         public  Tipo tipo {get; set; }//Adicionar mais de um tipo
     }
+
+
+
+    public Campeao(Parameters)
+    {
+        
+    }
 }
+
