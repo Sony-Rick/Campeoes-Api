@@ -1,12 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.Arm;
 using System.Threading.Tasks;
 using Domain.Enums;
 
 namespace Domain.Entidade
 {
-    public class Campeao : Entidade
+    public class Campeao 
     {
         public int Id { get; set; }
 
@@ -30,12 +31,6 @@ namespace Domain.Entidade
 
         public  Tipo tipo {get; set; }//Adicionar mais de um tipo
     }
-
-
-
-    public Campeao(Parameters)
-    {
-        
-    }
+    
 }
 

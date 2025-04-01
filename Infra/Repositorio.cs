@@ -9,7 +9,7 @@ using Domain.Interface;
 namespace Infra.Repositorio;
 
 
-public class CampeaoRepositorio : ICampeaoRepositorio
+public class CampeaoRepositorio 
 {
     private readonly List<Campeao> _campeao = new List<Campeao>();
     public void Adicionar(Campeao campeao)
