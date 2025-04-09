@@ -7,13 +7,13 @@ using Domain.Enums;
 
 namespace Domain.Entidade
 {
-    public class Campeao 
+    public class Campeao    
     {
         public int Id { get; set; }
 
         public string Nome { get; set; }
 
-        public string Regiao { get; set; }
+        public string Regiao {get; set;}
 
         public int VidaBase { get; set; }
 

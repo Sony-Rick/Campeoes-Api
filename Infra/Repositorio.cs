@@ -6,16 +6,24 @@ using System.Threading.Tasks;
 using Domain.Entidade;
 using Domain.Interface;
 
-namespace Infra.Repositorio;
-
-
-public class CampeaoRepositorio 
+namespace Infra.Repositorio
 {
+    
+
+  public class CampeaoRepositorio : ICampeaoRepositorio
+  {
     private readonly List<Campeao> _campeao = new List<Campeao>();
+    private ICampeaoRepositorio _campeaoRepositorioImplementation;
+
     public void Adicionar(Campeao campeao)
     {
         _campeao.Add(campeao);
-    }	
+    }
+
+    public void Add(Campeao campeao)
+    {
+        _campeaoRepositorioImplementation.Add(campeao);
+    }
 
     public Campeao GetById(int id)
     {
@@ -46,4 +54,5 @@ public class CampeaoRepositorio
                 _campeao.Remove(campeao);
             }
         }
+  }
 }
