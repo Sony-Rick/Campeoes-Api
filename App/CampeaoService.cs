@@ -20,14 +20,37 @@ namespace App.Service
         public void CriarCampeao(string Nome, string Regiao, int VidaBase, int ManaBase, int DanoAtaqueBase,
             int VelocidadeMovimentoBase, int RegenVida, int TempoDeRecarga)
         {
-            var campeao = new Campeao()
+            var campeao = new Campeao
+
             {
                 Id = GenerateId(),
                 Nome = Nome,
-                Regiao = Regiao ,
+                Regiao = Regiao,
                 VidaBase = VidaBase,
                 DanoAtaqueBasico = DanoAtaqueBase
-            }
+            };
+            _campeaoRepositorio.Add(campeao);
+        }
+
+        public Campeao GetCampeao(int id)
+        {
+                return _campeaoRepositorio.GetById(id);
+        }
+
+        public IEnumerable<Campeao> GetAllCampeaos()
+        {
+            return _campeaoRepositorio.GetAll();
+        }
+
+        public void DeleteCampeao(int id)
+        {
+            _campeaoRepositorio.Delete(id);
+        }
+
+        private int GenerateId()
+        {
+            var campeao = _campeaoRepositorio.GetAll();
+            return campeao.Any() ? campeao.Max(c => c.Id) + 1 : 1;
         }
     }
 }
