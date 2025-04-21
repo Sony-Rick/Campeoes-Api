@@ -4,12 +4,16 @@ using System.Linq;
 using System.Runtime.Intrinsics.Arm;
 using System.Threading.Tasks;
 using Domain.Enums;
+using Microsoft.Identity.Client;
+using Habilidades = Domain.ObjetosdeValor.Habilidades;
 
 namespace Domain.Entidade
 {
     public class Campeao    
     {
         public int Id { get; set; }
+        
+        public Tipo TipoCamepeao { get; set; }
 
         public string Nome { get; set; }
 
@@ -27,9 +31,11 @@ namespace Domain.Entidade
 
         public int TempoDeRecargBase { get; set; } //Nao deveria ser Adicionado junto da Habilidades ?  e tbm aplica tempo de recarga da passiva se for o caso  
 
-        public Lane lane { get; set; }
+       
 
         public  Tipo tipo {get; set; }//Adicionar mais de um tipo
+
+        public List<Habilidades> Habilidades { get; set; }
     }
     
 }

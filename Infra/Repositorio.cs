@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Domain.Entidade;
+using Domain.Enums;
 using Domain.Interface;
 
 namespace Infra.Repositorio
@@ -41,7 +42,6 @@ namespace Infra.Repositorio
         if (CampeaoExistente != null)
         {
             CampeaoExistente.Nome = campeao.Nome;
-            CampeaoExistente.lane = campeao.lane;
             CampeaoExistente.tipo = campeao.tipo;
         }
     }
