@@ -1,6 +1,6 @@
 namespace Domain.Enums;
 
-public enum Lane
+public enum LaneEnum
 {
     Topo,
     Meio,

@@ -9,50 +9,8 @@ using Domain.Interface;
 
 namespace Infra.Repositorio
 {
-    
-
-  public class CampeaoRepositorio : ICampeaoRepositorio
-  {
-    private readonly List<Campeao> _campeao = new List<Campeao>();
-    private ICampeaoRepositorio _campeaoRepositorioImplementation;
-
-    public void Adicionar(Campeao campeao)
+    public class CampeaoRepositorio
     {
-        _campeao.Add(campeao);
-    }
 
-    public void Add(Campeao campeao)
-    {
-        _campeaoRepositorioImplementation.Add(campeao);
     }
-
-    public Campeao GetById(int id)
-    {
-        return _campeao.FirstOrDefault(c =>c.Id == id) ?? new Campeao();        
-    }
-
-    public IEnumerable<Campeao> GetAll()
-    {
-        return _campeao;
-    }
-
-    public void Update(Campeao campeao)
-    {
-        var CampeaoExistente = GetById(campeao.Id);
-        if (CampeaoExistente != null)
-        {
-            CampeaoExistente.Nome = campeao.Nome;
-            CampeaoExistente.tipo = campeao.tipo;
-        }
-    }
-
-    public void Delete(int id)
-        {
-            var campeao = GetById(id);
-            if (campeao != null)
-            {
-                _campeao.Remove(campeao);
-            }
-        }
-  }
 }

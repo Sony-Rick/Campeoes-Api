@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{30B92CAD-D0CF-4847-934F-317C7F02A681}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Campeao.Domain", "Campeao.Domain\Campeao.Domain.csproj", "{30B92CAD-D0CF-4847-934F-317C7F02A681}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "Infra\Infra.csproj", "{05A6D03E-52CB-4316-ACE3-3DB176612CA3}"
 EndProject
