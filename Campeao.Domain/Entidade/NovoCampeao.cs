@@ -14,7 +14,7 @@ using EstartandoDevsCore.DomainObjects;
 
 namespace Campeao.Domain.Entidades;
 
-public class NovoCampeao : Entity, IAggregateRoot
+public class Campeao : Entity, IAggregateRoot
 {
     public TipoCampeao TipoCampeao { get; set; }
     
@@ -32,7 +32,7 @@ public class NovoCampeao : Entity, IAggregateRoot
 
     public List<Habilidades> Habilidades { get; set; }
 
-    public NovoCampeao(TipoCampeao tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
+    public Campeao(TipoCampeao tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
         LaneEnum campeaoPosicao, string passiva, Habilidades habilidades)
     {
         TipoCampeao = TipoCampeao;
