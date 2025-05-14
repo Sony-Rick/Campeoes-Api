@@ -1,4 +1,4 @@
-using Domain.Entidade;
+using Campeao.Domain.Entidades;
 using Domain.Interface;
 using System.Collections.Generic;
 using System.Globalization;

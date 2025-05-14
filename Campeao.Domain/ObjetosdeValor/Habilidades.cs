@@ -1,4 +1,4 @@
-using Domain.Entidade;
+using Campeao.Domain.Entidades;
 using Domain.Enums;
 
 namespace Domain.ObjetosdeValor
@@ -11,8 +11,7 @@ namespace Domain.ObjetosdeValor
         public int CustoDeMana { get; private set; }
         public int TempoDeRecarga { get; private set; }
         public string Descricao { get; private set; }
-
-        public NovoCampeao NovoCampeao { get; set; }
+        
 
         public Habilidades(TeclaAtivacaoEnum tecla, string nome, int dano, int custoDeMana, int tempoDeRecarga,
             string descricao)
