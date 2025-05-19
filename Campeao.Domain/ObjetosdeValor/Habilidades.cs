@@ -1,4 +1,4 @@
-using Campeao.Domain.Entidades;
+using Campeao.Domain.Entidade;
 using Domain.Enums;
 
 namespace Domain.ObjetosdeValor

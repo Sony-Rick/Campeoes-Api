@@ -12,7 +12,7 @@ using EstartandoDevsCore;
 using EstartandoDevsCore.DomainObjects;
 
 
-namespace Campeao.Domain.Entidades;
+namespace Campeao.Domain.Entidade;
 
 public class Campeao : Entity, IAggregateRoot
 {
@@ -26,14 +26,14 @@ public class Campeao : Entity, IAggregateRoot
     
     public int DanoAtaqueBasico { get; set; }
 
-    public LaneEnum CampeaoPosicao { get; set; }
+    public CampeaoPosicao CampeaoPosicao { get; set; }
     
     public string Passiva { get; set;  }
 
     public List<Habilidades> Habilidades { get; set; }
-
+    
     public Campeao(TipoCampeao tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
-        LaneEnum campeaoPosicao, string passiva, Habilidades habilidades)
+        CampeaoPosicao campeaoPosicao, string passiva, Habilidades habilidades)
     {
         TipoCampeao = TipoCampeao;
         Nome = nome;
@@ -44,8 +44,22 @@ public class Campeao : Entity, IAggregateRoot
         Passiva = passiva;
         Habilidades = Habilidades;
     }
-        
-        
+
+    public void AtribuirTipoCampeao(TipoCampeao tipoCampeao) => TipoCampeao = tipoCampeao;
+    public void AtribuirNome(string nome) => Nome = nome;
+
+    public void AtribuirVidaBase(int vidaBase) => VidaBase = vidaBase;
+
+    public void AtribuirManaBase(int manaBase) => ManaBase = manaBase;
+
+    public void AtribuirDanoAtaqueBasico(int danoAtaqueBasico) => DanoAtaqueBasico = danoAtaqueBasico;
+
+    public void AtribuirCampeaoPosicao(CampeaoPosicao campeaoPosicao) => CampeaoPosicao = campeaoPosicao;
+    public void AtribuirPassiva(string passiva) => Passiva = passiva;
+
+    public void AtribuirHabilidades(List<Habilidades> habilidades) => Habilidades = habilidades; 
+
+    
 }
     
 

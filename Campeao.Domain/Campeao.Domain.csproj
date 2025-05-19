@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Interface\ICampeaoRepositorio.cs" />
+    <Folder Include="Interface\" />
   </ItemGroup>
 
 </Project>
