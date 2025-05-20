@@ -1,12 +1,11 @@
+using Campeao.Domain.Entidade;
 using EstartandoDevsCore.Data;
 
-namespace Domain.Interface.Interface;
+namespace Campeao.Domain.Interface;
 
-public interface ICampeaoRepositorio
+public interface ICampeaoRepository : IRepository<Entidade.Campeao>
 {
-    public interface ICampeaoRepositorio : IRepository<Campeao.Domain.Entidade.Campeao>
-    {
-        Task<IEnumerable<Campeao.Domain.Entidade.Campeao>> ObeterporLane();
-        Task<IEnumerable<Campeao.Domain.Entidade.Campeao>> GetByNome();
-    }
+      List<Entidade.Campeao> ObterCampeao();
+      List<Entidade.Campeao> ObterPorCampeaoPosicao();
+      List<Entidade.Campeao> ObterPorTipoCampeao(); 
 }

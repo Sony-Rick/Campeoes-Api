@@ -16,13 +16,14 @@ namespace Campeao.Domain.Entidade;
 
 public class Campeao : Entity, IAggregateRoot
 {
+    private readonly LinkedList<Habilidades> habilidades;
     public TipoCampeao TipoCampeao { get; set; }
     
     public string Nome { get; set; }
     
     public int VidaBase { get; set; }
     
-    public int ManaBase { get; set; }//ou energia achar um modo de colocar a opcao para os dois tipos//
+    public int ManaBase { get; set; }
     
     public int DanoAtaqueBasico { get; set; }
 
@@ -30,7 +31,12 @@ public class Campeao : Entity, IAggregateRoot
     
     public string Passiva { get; set;  }
 
-    public List<Habilidades> Habilidades { get; set; }
+    public ICollection<Habilidades> Habilidades { get; set; }
+
+    public Campeao()
+    {
+        habilidades = new LinkedList<Habilidades>();
+    }
     
     public Campeao(TipoCampeao tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
         CampeaoPosicao campeaoPosicao, string passiva, Habilidades habilidades)
@@ -42,7 +48,6 @@ public class Campeao : Entity, IAggregateRoot
         DanoAtaqueBasico = danoAtaqueBasico;
         CampeaoPosicao = CampeaoPosicao;
         Passiva = passiva;
-        Habilidades = Habilidades;
     }
 
     public void AtribuirTipoCampeao(TipoCampeao tipoCampeao) => TipoCampeao = tipoCampeao;
@@ -56,11 +61,8 @@ public class Campeao : Entity, IAggregateRoot
 
     public void AtribuirCampeaoPosicao(CampeaoPosicao campeaoPosicao) => CampeaoPosicao = campeaoPosicao;
     public void AtribuirPassiva(string passiva) => Passiva = passiva;
-
-    public void AtribuirHabilidades(List<Habilidades> habilidades) => Habilidades = habilidades; 
-
     
 }
-    
+
 
 

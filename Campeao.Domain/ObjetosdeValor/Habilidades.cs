@@ -1,3 +1,4 @@
+using System.Security.Cryptography;
 using Campeao.Domain.Entidade;
 using Domain.Enums;
 
@@ -23,5 +24,14 @@ namespace Domain.ObjetosdeValor
             TempoDeRecarga = tempoDeRecarga;
             Descricao = descricao;
         }
+
+        public void AtribuirTecla(TeclaAtivacaoEnum teclaAtivacaoEnum) => teclaAtivacaoEnum = teclaAtivacaoEnum;
+        public void AtribuirNome(string nome) => Nome = nome;
+        public void AtribuirDano(int dano) => Dano = dano;
+        public void AtribuirCustoDeMana(int custoDeMana) => custoDeMana = CustoDeMana;
+        public void AtribuirTempoDeRecarga(int tempoDeRecarga) => tempoDeRecarga = TempoDeRecarga;
+        public void AtribuirDescricao(string descricao) => Descricao = descricao;
     }
+    
+    
 }
