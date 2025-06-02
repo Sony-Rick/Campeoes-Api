@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Infra\\Campeao.Infra.csproj": {}
+    "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Infra\\Campeao.Infra.csproj": {}
   },
   "projects": {
-    "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Domain\\Campeao.Domain.csproj": {
+    "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Domain\\Campeao.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Domain\\Campeao.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Domain\\Campeao.Domain.csproj",
         "projectName": "Campeao.Domain",
-        "projectPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Domain\\Campeao.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Domain\\Campeao.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -94,14 +94,14 @@
         }
       }
     },
-    "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Infra\\Campeao.Infra.csproj": {
+    "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Infra\\Campeao.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Infra\\Campeao.Infra.csproj",
+        "projectUniqueName": "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Infra\\Campeao.Infra.csproj",
         "projectName": "Campeao.Infra",
-        "projectPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Infra\\Campeao.Infra.csproj",
+        "projectPath": "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Infra\\Campeao.Infra.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Infra\\obj\\",
+        "outputPath": "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -116,8 +116,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Domain\\Campeao.Domain.csproj": {
-                "projectPath": "C:\\workspace\\Campeoes-Api\\Champions-Api\\Campeao.Domain\\Campeao.Domain.csproj"
+              "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Domain\\Campeao.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\RiderProjects\\Campeoes-Api\\Campeao.Domain\\Campeao.Domain.csproj"
               }
             }
           }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Campeao.App")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edc02dd57ff64c40fed706ec9053fc437bca1c3c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfaefe3c727726db93ce37bb09fa08afd4f46cec")]
 [assembly: System.Reflection.AssemblyProductAttribute("Campeao.App")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Campeao.App")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -5,19 +5,17 @@ using System.Globalization;
 using System.Linq;
 using System.Runtime.Intrinsics.Arm;
 using System.Threading.Tasks;
-using Domain.Enums;
 using Microsoft.Identity.Client;
-using Habilidades = Domain.ObjetosdeValor.Habilidades;
-using EstartandoDevsCore;
+using Campeao.Domain.ObjetosDeValor;
 using EstartandoDevsCore.DomainObjects;
+using Campeao.Domain.Enums;
 
-
-namespace Campeao.Domain.Entidade;
+namespace Campeao.Domain.Entities;
 
 public class Campeao : Entity, IAggregateRoot
 {
     private readonly LinkedList<Habilidades> habilidades;
-    public TipoCampeao TipoCampeao { get; set; }
+    public Tipo TipoCampeao { get; set; }
     
     public string Nome { get; set; }
     
@@ -38,7 +36,7 @@ public class Campeao : Entity, IAggregateRoot
         habilidades = new LinkedList<Habilidades>();
     }
     
-    public Campeao(TipoCampeao tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
+    public Campeao(Tipo tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
         CampeaoPosicao campeaoPosicao, string passiva, Habilidades habilidades)
     {
         TipoCampeao = TipoCampeao;
@@ -50,7 +48,7 @@ public class Campeao : Entity, IAggregateRoot
         Passiva = passiva;
     }
 
-    public void AtribuirTipoCampeao(TipoCampeao tipoCampeao) => TipoCampeao = tipoCampeao;
+    public void AtribuirTipoCampeao(Tipo tipoCampeao) => TipoCampeao = tipoCampeao;
     public void AtribuirNome(string nome) => Nome = nome;
 
     public void AtribuirVidaBase(int vidaBase) => VidaBase = vidaBase;

@@ -1,4 +1,4 @@
-namespace Domain.Enums;
+namespace Campeao.Domain.Enums;
 public enum TeclaAtivacaoEnum
 {
     Q,

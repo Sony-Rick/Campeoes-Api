@@ -1,6 +1,6 @@
-namespace Domain.Enums;
+namespace Campeao.Domain.Enums;
 
-public enum TipoCampeao
+public enum Tipo
 {
     Tanque,
     Assassino,

@@ -1,10 +1,10 @@
 using System.Security.Cryptography;
-using Campeao.Domain.Entidade;
-using Domain.Enums;
+using Campeao.Domain.Entities;
+using Campeao.Domain.Enums;
 
-namespace Domain.ObjetosdeValor
-{
-    public class Habilidades
+namespace Campeao.Domain.ObjetosDeValor;
+
+public class Habilidades
     {
         public TeclaAtivacaoEnum Tecla { get; private set; }
         public string Nome { get; private set; }
@@ -32,6 +32,3 @@ namespace Domain.ObjetosdeValor
         public void AtribuirTempoDeRecarga(int tempoDeRecarga) => tempoDeRecarga = TempoDeRecarga;
         public void AtribuirDescricao(string descricao) => Descricao = descricao;
     }
-    
-    
-}
