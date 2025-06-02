@@ -17,6 +17,3 @@ public interface ICampeaoRepository : IRepository<Entities.Campeao>
         return campeaos.Where(c => c.TipoCampeao == tipo).ToList();
     }
 }
-
-
-
