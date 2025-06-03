@@ -1,4 +1,4 @@
-# Champions-Api
+# Campeões-Api
 Aplicação para Cadastro e detalhamento de um Campeão;
 
 Nome , habilidades e descrição  
