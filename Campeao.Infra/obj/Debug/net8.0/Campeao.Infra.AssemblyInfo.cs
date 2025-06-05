@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Campeao.Infra")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bfaefe3c727726db93ce37bb09fa08afd4f46cec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9a64131218426ac1bc86637b155ec234e9a5588")]
 [assembly: System.Reflection.AssemblyProductAttribute("Campeao.Infra")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Campeao.Infra")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
