@@ -5,6 +5,10 @@
     <ProjectReference Include="..\Campeao.Infra\Campeao.Infra.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="ViewModels\Program.cs" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
