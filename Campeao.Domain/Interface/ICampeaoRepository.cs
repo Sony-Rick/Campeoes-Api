@@ -5,9 +5,11 @@ using Microsoft.Identity.Client;
 
 namespace Campeao.Domain.Interface;
 
-public interface ICampeaoRepository : IRepository<Entities.Campeao>
+public interface ICampeaoRepository : IRepository<NovoCampeao>
 {
-    public List<Domain.Entities.Campeao> ObterPorPosicao(List<Entities.Campeao> campeaos, CampeaoPosicao pooPosicao);
+    public List<NovoCampeao> ObterPorPosicao(List<NovoCampeao> campeaos, CampeaoPosicao pooPosicao);
 
-    public List<Domain.Entities.Campeao> ObterPorTipo(List<Entities.Campeao> campeaos, Tipo tipo);
+    public List<NovoCampeao> ObterPorTipo(List<NovoCampeao> campeaos, Tipo tipo);
+
+    
 }

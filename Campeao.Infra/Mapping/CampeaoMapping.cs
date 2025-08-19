@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Campeao.Infra.Mapping;
-public class CampeaoMapping : IEntityTypeConfiguration<Domain.Entities.Campeao>
+public class CampeaoMapping : IEntityTypeConfiguration<NovoCampeao>
 {
-    public void Configure(EntityTypeBuilder<Campeao.Domain.Entities.Campeao> builder)
+    public void Configure(EntityTypeBuilder<NovoCampeao> builder)
     {
         builder.ToTable("Campeao");
         builder.HasKey(x => x.Id);

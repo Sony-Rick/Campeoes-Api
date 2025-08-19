@@ -15,7 +15,7 @@ public class CampeaoContext : DbContext, IUnitOfWorks
 {
       private readonly IMediatorHandler _mediatorHandler;
       public DbSet<Habilidades> Habilidades { get; set; }
-      public DbSet<Campeao.Domain.Entities.Campeao> Campeaos { get; set; }
+      public DbSet<NovoCampeao> Campeaos { get; set; }
 
       public CampeaoContext(DbContextOptions<CampeaoContext> options, IMediatorHandler mediatorHandler) : base(options)
       {

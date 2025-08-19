@@ -12,7 +12,7 @@ using Campeao.Domain.Enums;
 
 namespace Campeao.Domain.Entities;
 
-public class Campeao : Entity, IAggregateRoot
+public class NovoCampeao : Entity, IAggregateRoot
 {
     private readonly LinkedList<Habilidades> habilidades;
     public Tipo TipoCampeao { get; set; }
@@ -31,12 +31,12 @@ public class Campeao : Entity, IAggregateRoot
 
     public ICollection<Habilidades> Habilidades { get; set; }
 
-    public Campeao()
+    public NovoCampeao()
     {
         habilidades = new LinkedList<Habilidades>();
     }
     
-    public Campeao(Tipo tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
+    public NovoCampeao(Tipo tipoCampeao, string nome, int vidaBase,int manaBase, int danoAtaqueBasico,
         CampeaoPosicao campeaoPosicao, string passiva, Habilidades habilidades)
     {
         TipoCampeao = TipoCampeao;
