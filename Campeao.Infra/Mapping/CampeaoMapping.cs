@@ -1,4 +1,5 @@
 using Campeao.Domain.Entities;
+using Campeao.Domain.ObjetosDeValor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

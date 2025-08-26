@@ -3,33 +3,29 @@ using Campeao.Domain.Interface;
 using System.Collections.Generic;
 using System.Globalization;
 using Campeao.Domain.Enums;
+using Campeao.Domain.ObjetosDeValor;
 using Microsoft.Identity.Client;
 
 namespace Campeao.App.Service
 {
     public class CampeaoService
     {
-        private readonly ICampeaoRepository _campeaoRepository;
+        public void CadastrarHabilidades(NovoCampeao novoCampeao)
+        {
+            while (true)
+            {
+                Console.WriteLine("Digite a tecla da habilidade (Passiva,Q,W,E,R ou 'Sair' para Finalizar: ");
+                var TeclaAtivacaoEnum = Console.ReadLine();
 
-        public CampeaoService(ICampeaoRepository repository)
-        {
-            _campeaoRepository = repository;
-        }
+                if (TeclaAtivacaoEnum.ToLower() == "Sair")
+                    break;
+                Console.Write("Digite a descrição da Habilidade: ");
+                var descricao = Console.ReadLine();
 
-        public void CadastrarCampeao(NovoCampeao campeao)
-        {
-            _campeaoRepository.Adicionar(campeao);
-        }
-        public List<NovoCampeao>ListarTodos()
-        {
-           return _campeaoRepository.ListarTodos();
-        }
+                novoCampeao.Habilidades.Add(new Habilidades(TeclaAtivacaoEnum));
 
-        public List<NovoCampeao> BuscarPorId()
-        {
-            return _campeaoRepository.ObterPorId();
+                Console.WriteLine($"Habilidade{TeclaAtivacaoEnum} adiciona com sucesso!\n");
+            }
         }
-        
     }
 }
-
