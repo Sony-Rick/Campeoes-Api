@@ -9,12 +9,12 @@ public class Habilidades
         public TeclaAtivacaoEnum Tecla { get; private set; }
         public string Nome { get; private set; }
         public string Dano { get; private set; }
-        public int CustoDeMana { get; private set; }
-        public int TempoDeRecarga { get; private set; }
+        public string CustoDeMana { get; private set; }
+        public string TempoDeRecarga { get; private set; }
         public string Descricao { get; private set; }
         
 
-        public Habilidades(TeclaAtivacaoEnum tecla, string nome, string dano, int custoDeMana, int tempoDeRecarga,
+        public Habilidades(TeclaAtivacaoEnum tecla, string nome, string dano, string custoDeMana, string tempoDeRecarga,
             string descricao)
         {
             Tecla = tecla;
@@ -38,14 +38,40 @@ public class Habilidades
       
                 Console.WriteLine($"Digite a Dano da habilidade para a {tecla}:");
                  Dano = Console.ReadLine();
+
+                 int dano = 0;
+                 if (!string.IsNullOrWhiteSpace(Dano))
+                 {
+                     if (!int.TryParse(Dano, out dano))
+                     {
+                         Console.WriteLine("VaLor inválido! Será considerado 0.");
+                     };
+                 }
       
-                Console.WriteLine($"Digite o Custo de Mana da habilidade para a {tecla}:");
+                Console.WriteLine("Digite o Custo de Mana da habilidade para a:");
                  CustoDeMana = Console.ReadLine();
-      
-                Console.WriteLine($"Digite o Tempo de recarga da habilidade para a {tecla}:");
+
+                 int Mana = 0;
+                 if (!string.IsNullOrWhiteSpace(CustoDeMana))
+                 {
+                     if (!int.TryParse(CustoDeMana, out Mana))
+                     {
+                         Console.WriteLine("Digite um valor! ou sera considerado 0.");
+                     }
+                 }
+                 Console.WriteLine($"Digite o tempo de recarga da habilidade");
                  TempoDeRecarga = Console.ReadLine();
-      
-                Console.WriteLine($"Digite a descrição da habilidade para a {tecla}:");
+
+                 int recarga = 0;
+                 if (!string.IsNullOrWhiteSpace(TempoDeRecarga))
+                 {
+                     if (!int.TryParse(TempoDeRecarga,out recarga))
+                     {
+                         Console.WriteLine("Digite um valor! ou sera considerado 0.");
+                     }
+                 }
+
+                 Console.WriteLine($"Digite a descrição da habilidade para a {tecla}:");
                 Descricao = Console.ReadLine();
 
                 habilidades.Add(new Habilidades
@@ -66,7 +92,7 @@ public class Habilidades
         public void AtribuirTecla(TeclaAtivacaoEnum teclaAtivacaoEnum) => teclaAtivacaoEnum = teclaAtivacaoEnum;
         public void AtribuirNome(string nome) => Nome = nome;
         public void AtribuirDano(string dano) => Dano = dano;
-        public void AtribuirCustoDeMana(int custoDeMana) => custoDeMana = CustoDeMana;
-        public void AtribuirTempoDeRecarga(int tempoDeRecarga) => tempoDeRecarga = TempoDeRecarga;
+        public void AtribuirCustoDeMana(string custoDeMana) => custoDeMana = CustoDeMana;
+        public void AtribuirTempoDeRecarga(string tempoDeRecarga) => tempoDeRecarga = TempoDeRecarga;
         public void AtribuirDescricao(string descricao) => Descricao = descricao;
     }
