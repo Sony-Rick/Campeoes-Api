@@ -73,17 +73,7 @@ public class Habilidades
 
                  Console.WriteLine($"Digite a descrição da habilidade para a {tecla}:");
                 Descricao = Console.ReadLine();
-
-                habilidades.Add(new Habilidades
-                {
-                    Tecla = Tecla ,
-                    Nome = Nome ,
-                    Dano = Dano ,
-                    CustoDeMana = CustoDeMana ,
-                    TempoDeRecarga = TempoDeRecarga,
-                    Descricao = Descricao
-                });
-
+                
             }
 
             return habilidades;
