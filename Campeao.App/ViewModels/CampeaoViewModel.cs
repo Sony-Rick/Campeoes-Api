@@ -12,11 +12,11 @@ public class CampeaoViewModel
 
     public Tipo TipoCampeao { get; set;  }
     
-    public int VidaBase { get; set;  }
+    public double VidaBase { get; set;  }
     
-    public int ManaBase { get; set;  }
+    public double ManaBase { get; set;  }
     
-    public int DanoAtaqueBasico { get; set; }
+    public double DanoAtaqueBasico { get; set; }
     
     public CampeaoPosicao CampeaoPosicao { get; set;  }
     
