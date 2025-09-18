@@ -10,6 +10,7 @@ public class Program
 {
     static void Main()
     {
-        
+        var repositorio = new CampeaoRepository();
+        var service = CampeaoService;
     }
 }

@@ -8,5 +8,23 @@ using Microsoft.Identity.Client;
 
 namespace Campeao.App.Service
 {
-   
+   public class CampeaoService
+   {
+      private readonly ICampeaoRepository _campeaoRepository;
+
+      public CampeaoService(ICampeaoRepository repository)
+      {
+         _campeaoRepository = repository;
+      }
+
+      public void CadastrarCampeao(NovoCampeao campeao)
+      {
+         _campeaoRepository.Adicionar(campeao);
+      }
+
+      public NovoCampeao? BuscarPorId(Guid id)
+      {
+         return _campeaoRepository.ObterPorId(id);
+      }
+   }
 }
