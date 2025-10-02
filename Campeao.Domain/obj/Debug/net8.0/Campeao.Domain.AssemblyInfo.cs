@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Campeao.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b1905cef2d6e5b79b26bcc43cebce4e8b30f53b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+619534d4d38326542dfbeaedc58dd95e533a2bc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Campeao.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Campeao.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

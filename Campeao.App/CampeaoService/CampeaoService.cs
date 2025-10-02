@@ -5,6 +5,7 @@ using System.Globalization;
 using Campeao.Domain.Enums;
 using Campeao.Domain.ObjetosDeValor;
 using Microsoft.Identity.Client;
+using EstartandoDevsCore.Ultilities;
 
 namespace Campeao.App.Service
 {
@@ -22,9 +23,10 @@ namespace Campeao.App.Service
          _campeaoRepository.Adicionar(campeao);
       }
 
-      public NovoCampeao? BuscarPorId(Guid id)
+      public Task<NovoCampeao> BuscarPorId(Guid id)
       {
          return _campeaoRepository.ObterPorId(id);
       }
    }
+   
 }
