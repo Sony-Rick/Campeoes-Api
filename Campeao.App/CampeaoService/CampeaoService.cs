@@ -5,28 +5,8 @@ using System.Globalization;
 using Campeao.Domain.Enums;
 using Campeao.Domain.ObjetosDeValor;
 using Microsoft.Identity.Client;
-using EstartandoDevsCore.Ultilities;
+using EstartandoDevsCore;
 
-namespace Campeao.App.Service
-{
-   public class CampeaoService
-   {
-      private readonly ICampeaoRepository _campeaoRepository;
+///namespace Campeao.App.Service
 
-      public CampeaoService(ICampeaoRepository repository)
-      {
-         _campeaoRepository = repository;
-      }
 
-      public void CadastrarCampeao(NovoCampeao campeao)
-      {
-         _campeaoRepository.Adicionar(campeao);
-      }
-
-      public Task<NovoCampeao> BuscarPorId(Guid id)
-      {
-         return _campeaoRepository.ObterPorId(id);
-      }
-   }
-   
-}

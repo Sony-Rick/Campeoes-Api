@@ -7,10 +7,28 @@
 
   <ItemGroup>
     <Compile Remove="ViewModels\Program.cs" />
+    <Compile Remove="Controllers\**" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
     <PackageReference Include="EstartandoDevs.Core" Version="1.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="10.0.2" />
+    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="10.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="Controllers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\**" />
   </ItemGroup>
 
   <PropertyGroup>
