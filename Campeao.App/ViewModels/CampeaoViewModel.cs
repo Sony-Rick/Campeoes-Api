@@ -1,4 +1,4 @@
-using Campeao.Domain.Entities;
+
 using Campeao.Domain.Enums;
 using Campeao.Domain.ObjetosDeValor;
 

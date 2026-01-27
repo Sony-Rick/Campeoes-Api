@@ -1,41 +1,26 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <ItemGroup>
-    <ProjectReference Include="..\Campeao.Domain\Campeao.Domain.csproj" />
-    <ProjectReference Include="..\Campeao.Infra\Campeao.Infra.csproj" />
-  </ItemGroup>
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>Campeao.App_Api</RootNamespace>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="ViewModels\Program.cs" />
-    <Compile Remove="Controllers\**" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.2"/>
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.1.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.1.0" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="EntityFramework" Version="6.5.1" />
-    <PackageReference Include="EstartandoDevs.Core" Version="1.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="10.0.2" />
-    <PackageReference Include="Microsoft.Extensions.Primitives" Version="10.0.2" />
-    <PackageReference Include="System.Diagnostics.DiagnosticSource" Version="10.0.2" />
-  </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="ViewModels\Program.cs" />
+    </ItemGroup>
 
-  <ItemGroup>
-    <EmbeddedResource Remove="Controllers\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Controllers\**" />
-  </ItemGroup>
-
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <RootNamespace>App</RootNamespace>
-  </PropertyGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Campeao.Domain\Campeao.Domain.csproj" />
+      <ProjectReference Include="..\Campeao.Infra\Campeao.Infra.csproj" />
+    </ItemGroup>
 
 </Project>
