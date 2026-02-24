@@ -9,12 +9,12 @@ using EstartandoDevsCore.Ultilities;
 using FluentValidation.Results;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
-namespace Campeo.Infra.Data;
+namespace Campeao.Infra.Data;
 
 public class CampeaoContext : DbContext, IUnitOfWorks
 {
       private readonly IMediatorHandler _mediatorHandler;
-      public DbSet<Habilidades> Habilidades { get; set; }
+      public DbSet<Habilidades> Habilidades { get; set;}
       public DbSet<NovoCampeao> Campeaos { get; set; }
 
       public CampeaoContext(DbContextOptions<CampeaoContext> options, IMediatorHandler mediatorHandler) : base(options)
