@@ -40,6 +40,7 @@ public class CampeaoRepository : ICampeaoRepository
   }
   public IUnitOfWorks UnitOfWork { get; }
   
+
   public List<NovoCampeao> ObterPorPosicao(List<NovoCampeao> campeaos, CampeaoPosicao posicao)
   {
     return _context.Campeoes.Where(c => c.CampeaoPosicao == posicao).ToList();

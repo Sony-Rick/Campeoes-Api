@@ -22,6 +22,7 @@
     <ItemGroup>
       <Compile Remove="ViewModels\Program.cs" />
       <Compile Remove="Models\**" />
+      <Compile Remove="WeatherForecast.cs" />
     </ItemGroup>
 
     <ItemGroup>

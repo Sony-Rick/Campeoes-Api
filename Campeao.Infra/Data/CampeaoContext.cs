@@ -1,5 +1,4 @@
 using Campeao.Domain.Entities;
-using Campeao.Domain.ObjetosDeValor;
 using EstartandoDevsCore.Data;
 using Microsoft.EntityFrameworkCore;
 using EstartandoDevsCore.DomainObjects;
@@ -14,13 +13,13 @@ public class CampeaoContext : DbContext, IUnitOfWorks
 {
       private readonly IMediatorHandler _mediatorHandler;
       
+      public DbSet<NovoCampeao> Campeoes { get; set;}
+     
       public CampeaoContext(DbContextOptions<CampeaoContext> options, IMediatorHandler mediatorHandler) : base(options)
       {
             _mediatorHandler = mediatorHandler;
       }
-      public DbSet<NovoCampeao> Campeoes { get; set; }
       
-      public DbSet<Habilidades> Habilidade { get; set;}
 
       protected override void OnModelCreating(ModelBuilder modelBuilder)
       {
