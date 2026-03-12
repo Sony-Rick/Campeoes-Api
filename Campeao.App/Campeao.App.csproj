@@ -9,6 +9,7 @@
 
     <ItemGroup>
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8">
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -20,11 +21,24 @@
 
     <ItemGroup>
       <Compile Remove="ViewModels\Program.cs" />
+      <Compile Remove="Models\**" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Campeao.Domain\Campeao.Domain.csproj" />
       <ProjectReference Include="..\Campeao.Infra\Campeao.Infra.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Models\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Models\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Models\**" />
     </ItemGroup>
 
 </Project>

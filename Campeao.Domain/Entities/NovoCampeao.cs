@@ -15,7 +15,7 @@ namespace Campeao.Domain.Entities;
 
 public class NovoCampeao : Entity, IAggregateRoot
 {
-    private readonly LinkedList<Habilidades> habilidades;
+    private readonly LinkedList<Habilidades> Habilidade;
     public Tipo TipoCampeao { get; set; }
 
     private string _nome;
@@ -102,7 +102,7 @@ public class NovoCampeao : Entity, IAggregateRoot
 
     public NovoCampeao()
     {
-        habilidades = new LinkedList<Habilidades>();
+        Habilidade = new LinkedList<Habilidades>();
     }
     
     public NovoCampeao(Tipo tipoCampeao, string nome, double vidaBase,double manaBase, double danoAtaqueBasico,

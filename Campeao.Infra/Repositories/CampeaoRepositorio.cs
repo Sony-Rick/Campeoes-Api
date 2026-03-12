@@ -1,7 +1,7 @@
 using Campeao.Domain.Entities;
 using Campeao.Domain.Enums;
 using Campeao.Domain.Interface;
-using Campeo.Infra.Data;
+using Campeao.Infra.Data;
 using EstartandoDevsCore.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -20,33 +20,33 @@ public class CampeaoRepository : ICampeaoRepository
 
   public async Task<NovoCampeao> ObterPorId(Guid Id)
   {
-    return await _context.Campeaos.FirstOrDefaultAsync(x => x.Id == Id);
+    return await _context.Campeoes.FirstOrDefaultAsync(x => x.Id == Id);
   }
 
   public void Adicionar(NovoCampeao entity)
   {
-    _context.Campeaos.Add(entity);
+    _context.Campeoes.Add(entity);
   }
 
   public void Atualizar(NovoCampeao entity)
   {
-    _context.Campeaos.Update(entity);
+    _context.Campeoes.Update(entity);
   }
 
   public void Apagar(Func<NovoCampeao, bool> predicate)
   {
-    var campeao = _context.Campeaos.FirstOrDefault(predicate);
-    _context.Campeaos.Remove(campeao);
+    var campeao = _context.Campeoes.FirstOrDefault(predicate);
+    _context.Campeoes.Remove(campeao);
   }
   public IUnitOfWorks UnitOfWork { get; }
   
   public List<NovoCampeao> ObterPorPosicao(List<NovoCampeao> campeaos, CampeaoPosicao posicao)
   {
-    return _context.Campeaos.Where(c => c.CampeaoPosicao == posicao).ToList();
+    return _context.Campeoes.Where(c => c.CampeaoPosicao == posicao).ToList();
   }
   public List<NovoCampeao> ObterPorTipo(List<NovoCampeao> campeaos, Tipo tipo)
   {
-    return _context.Campeaos.Where(c => c.TipoCampeao == tipo).ToList();
+    return _context.Campeoes.Where(c => c.TipoCampeao == tipo).ToList();
   }
   
   public void Dispose()

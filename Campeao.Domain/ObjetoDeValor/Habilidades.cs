@@ -1,5 +1,3 @@
-using System.Security.Cryptography;
-using Campeao.Domain.Entities;
 using Campeao.Domain.Enums;
 
 namespace Campeao.Domain.ObjetosDeValor;
@@ -79,7 +77,6 @@ public class Habilidades
             return habilidades;
         }
         
-        public void AtribuirTecla(TeclaAtivacaoEnum teclaAtivacaoEnum) => teclaAtivacaoEnum = teclaAtivacaoEnum;
         public void AtribuirNome(string nome) => Nome = nome;
         public void AtribuirDano(string dano) => Dano = dano;
         public void AtribuirCustoDeMana(string custoDeMana) => custoDeMana = CustoDeMana;

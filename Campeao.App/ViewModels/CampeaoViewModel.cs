@@ -1,8 +1,9 @@
-
+using Campeao.Domain.Entities;
 using Campeao.Domain.Enums;
 using Campeao.Domain.ObjetosDeValor;
 
-namespace Campeao.App.ViewModels;
+
+namespace Campeao.App_Api.ViewModels;
 
 public class CampeaoViewModel
 {
@@ -24,19 +25,19 @@ public class CampeaoViewModel
     
     public ICollection<Habilidades> Habilidades { get; set; }
     
-    public static CampeaoViewModel Mapear (Domain.Entities.NovoCampeao novoCampeao)
+    public static CampeaoViewModel Mapear (NovoCampeao campeao )
     {
         return new CampeaoViewModel()
         {
-            Id = novoCampeao.Id,
-            Nome = novoCampeao.Nome,
-            TipoCampeao = novoCampeao.TipoCampeao,
-            VidaBase = novoCampeao.VidaBase,
-            ManaBase = novoCampeao.ManaBase,
-            DanoAtaqueBasico = novoCampeao.DanoAtaqueBasico,
-            CampeaoPosicao = novoCampeao.CampeaoPosicao,
-            Passsiva = novoCampeao.Passiva,
-            Habilidades = novoCampeao.Habilidades
+            Id = campeao.Id ,
+            Nome = campeao.Nome ,
+            TipoCampeao = campeao.TipoCampeao ,
+           VidaBase = campeao.VidaBase ,
+            ManaBase = campeao.ManaBase ,
+            DanoAtaqueBasico = campeao.DanoAtaqueBasico,
+            CampeaoPosicao = campeao.CampeaoPosicao,
+            Passsiva = campeao.Passiva,
+            Habilidades = campeao.Habilidades
         };
     }
 }
