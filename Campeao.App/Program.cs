@@ -1,6 +1,12 @@
+using Campeao.Infra.Data;
+using Microsoft.EntityFrameworkCore;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddDbContext<CampeaoContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CampeaoConexao")));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger / OpenAPI at https://aka.ms/aspnet/swashbuckle

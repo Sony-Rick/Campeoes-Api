@@ -23,6 +23,7 @@
       <Compile Remove="ViewModels\Program.cs" />
       <Compile Remove="Models\**" />
       <Compile Remove="WeatherForecast.cs" />
+      <Compile Remove="Controllers\CampeaoControllers.cs" />
     </ItemGroup>
 
     <ItemGroup>
